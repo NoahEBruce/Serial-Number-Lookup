@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
  
-wb = openpyxl.load_workbook('/Users/brucnoa2185/Documents/TestSpreadsheet.xlsx')
+wb = openpyxl.load_workbook('enter your file path here')
 sheet = wb['Sheet1'] 
 
 new_wb = Workbook()
@@ -46,4 +46,4 @@ for row in sheet.iter_rows(min_row=2, values_only=True):
  
 
 
-new_wb.save('/Users/brucnoa2185/Documents/output.xlsx')
+new_wb.save('enter your filepath here')
